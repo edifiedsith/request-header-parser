@@ -12,10 +12,6 @@ app.get('/', function (req, res) {
     res.send({'ipaddress':req.get('x-forwarded-for'),'language':lang[0],'software':str})
 })
 
-app.get('/', function (req, res) {
- 
-})
-
 app.listen(app.get('port'), function () {
   console.log('Listening on port', app.get('port'))
 })
